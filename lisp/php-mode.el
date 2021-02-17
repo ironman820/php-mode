@@ -1166,7 +1166,7 @@ After setting the stylevars run hooks according to STYLENAME
   (setq-local font-lock-variable-name-face 'php-variable-name)
   (setq-local font-lock-constant-face 'php-constant)
 
-  (setq-local syntax-propertize-function #'php-syntax-propertize-function)
+  ;;(setq-local syntax-propertize-function #'php-syntax-propertize-function)
   (add-hook 'syntax-propertize-extend-region-functions
             #'php-syntax-propertize-extend-region t t)
 
@@ -1220,13 +1220,13 @@ After setting the stylevars run hooks according to STYLENAME
     (advice-add #'c-looking-at-or-maybe-in-bracelist
                 :override 'php-c-looking-at-or-maybe-in-bracelist))
 
-;;  (when (>= emacs-major-version 25)
-;;    (with-silent-modifications
-;;      (save-excursion
-;;        (let* ((start (point-min))
-;;               (end (min (point-max)
-;;                         (+ start syntax-propertize-chunk-size))))
-;;          (php-syntax-propertize-function start end))))))
+  (when (>= emacs-major-version 25)
+    (with-silent-modifications
+      (save-excursion
+        (let* ((start (point-min))
+               (end (min (point-max)
+                         (+ start syntax-propertize-chunk-size))))
+          (php-syntax-propertize-function start end))))))
 
 (declare-function semantic-create-imenu-index "semantic/imenu" (&optional stream))
 
