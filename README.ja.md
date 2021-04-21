@@ -2,8 +2,8 @@
   <h1>Emacs PHP Mode</h1>
 
 [![Emacs: 27.1](https://img.shields.io/badge/Emacs-27.1-blue.svg)](https://www.gnu.org/software/emacs/)
-[![lang: PHP 7](https://img.shields.io/badge/lang-PHP%207-brightgreen.svg)](http://php.net/manual/migration70.php)
-[![lang: PHP 5](https://img.shields.io/badge/lang-PHP%205-green.svg)](http://php.net/downloads.php)
+[![lang: PHP 8.0](https://img.shields.io/badge/lang-PHP%208.0-brightgreen.svg)](https://php.net/manual/migration80.php)
+[![lang: PHP 7](https://img.shields.io/badge/lang-PHP%207-green.svg)](https://php.net/downloads.php)
 [![Build Status](https://github.com/emacs-php/php-mode/workflows/CI/badge.svg)](https://github.com/emacs-php/php-mode/actions)
 [![melpa badge][melpa-badge]][melpa-link]
 [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
@@ -18,7 +18,7 @@ A powerful and flexible Emacs major mode for editing PHP scripts
 インストール
 ------------
 
-**PHP ModeはEmacs 24.3以降で動作します**。古いバージョンのEmacsでも動作するかもしれませんが、保証外です。 古いバージョンのEmacsのPHPモードを使用することによる問題のバグ報告は積極的に対応しません。現在のサポートポリシーは[Supported Version]のページをご覧ください。
+**PHP ModeはEmacs 25.2以降で動作します**。古いバージョンのEmacsでも動作するかもしれませんが、保証外です。 古いバージョンのEmacsのPHPモードを使用することによる問題のバグ報告は積極的に対応しません。現在のサポートポリシーは[Supported Version]のページをご覧ください。
 
 ### **(推奨)** MELPAからのインストール
 
@@ -118,7 +118,7 @@ $object->foo()
        ->baz();
 ```
 
-この動作はデフォルトでは無効ですが、カスタマイズ変数 `php-lineup-cascaded-calls` セットすることで有効化できます。
+この動作はデフォルトでは無効ですが、カスタマイズ変数 `php-mode-lineup-cascaded-calls` をセットすることで有効化できます。
 
 **注意**: アライメントは、PHPモードのコーディングスタイルのひとつを使用するか、それを継承した場合のみ機能します。
 

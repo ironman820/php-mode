@@ -2,8 +2,8 @@
   <h1>Emacs PHP Mode</h1>
 
 [![Emacs: 27.1](https://img.shields.io/badge/Emacs-27.1-blue.svg)](https://www.gnu.org/software/emacs/)
-[![lang: PHP 7](https://img.shields.io/badge/lang-PHP%207-brightgreen.svg)](http://php.net/manual/migration70.php)
-[![lang: PHP 5](https://img.shields.io/badge/lang-PHP%205-green.svg)](http://php.net/downloads.php)
+[![lang: PHP 8.0](https://img.shields.io/badge/lang-PHP%208.0-brightgreen.svg)](https://php.net/manual/migration80.php)
+[![lang: PHP 7](https://img.shields.io/badge/lang-PHP%207-green.svg)](https://php.net/downloads.php)
 [![Build Status](https://github.com/emacs-php/php-mode/workflows/CI/badge.svg)](https://github.com/emacs-php/php-mode/actions)
 [![melpa badge][melpa-badge]][melpa-link]
 [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
@@ -18,7 +18,7 @@ Please submit any bug reports or feature requests by creating issues on [the Git
 Installation
 ------------
 
-**PHP Mode works on Emacs 24.3 or later.**  PHP Mode may work with older versions of Emacs but this is not guaranteed.  Bug reports for problems related to using PHP Mode with older versions of Emacs will most like *not* be addressed.
+**PHP Mode works on Emacs 25.2 or later.**  PHP Mode may work with older versions of Emacs but this is not guaranteed.  Bug reports for problems related to using PHP Mode with older versions of Emacs will most like *not* be addressed.
 
 The current support policy can be found on the [Supported Version] page.
 
